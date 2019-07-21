@@ -9,7 +9,7 @@ import Foundation
 
 struct Enpoints {
 
-	private let main = URL(string: "http://libgen.io/")!
+	private let main = URL(string: "http://booksdescr.org/")!
 
 	private var dateFormatter : DateFormatter {
 		let format = DateFormatter()
@@ -19,24 +19,26 @@ struct Enpoints {
 		return format
 	}
 
-	enum Routes {
-		case libGen
+	enum Routes: String {
+		case libGen = "json.php"
+		case file = "get.php"
+		case cover = "covers"
 	}
 
-	private func query() -> URLComponents {
-		var components = URLComponents(url: main, resolvingAgainstBaseURL: true)!
-//		components.
+	private func query(_ url: URL? = nil, path: String = "") -> URLComponents {
+		var route = url ?? main
 
+		if !path.isEmpty {
+			route.appendPathComponent(path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")
+		}
+		var components = URLComponents(url: route, resolvingAgainstBaseURL: true)!
+		components.queryItems = []
 		return components
 	}
 
-	internal func enpoint(_ route: Routes, from first: Date, to last: Date) -> URL {
-		var comps = query()
-		
-
-
-//		comps.percentEncodedQueryItems?.append(URLQueryItem(name: <#T##String#>, value: <#T##String?#>))
-
+	internal func endpoint(_ route: Routes, query items: [URLQueryItem] = []) -> URL {
+		var comps = query(path: route.rawValue)
+		comps.queryItems?.append(contentsOf: items)
 		return comps.url!
 	}
 
