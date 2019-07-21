@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		ED550FF422A7445B00E98923 /* LibGenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED550FEA22A7445B00E98923 /* LibGenAPI.framework */; };
 		ED550FF922A7445B00E98923 /* LibGenAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED550FF822A7445B00E98923 /* LibGenAPITests.swift */; };
-		ED55101022A7449F00E98923 /* LibGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55100F22A7449F00E98923 /* LibGen.swift */; };
+		ED55101022A7449F00E98923 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55100F22A7449F00E98923 /* Book.swift */; };
 		ED55101222A7459400E98923 /* InteractionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55101122A7459400E98923 /* InteractionAPI.swift */; };
 		ED55101422A7471600E98923 /* LibGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55101322A7471600E98923 /* LibGenTests.swift */; };
 		ED55101622A7474000E98923 /* LibGen.json in Resources */ = {isa = PBXBuildFile; fileRef = ED55101522A7474000E98923 /* LibGen.json */; };
 		ED55101822A7493E00E98923 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55101722A7493E00E98923 /* Tools.swift */; };
 		ED55101A22A74C7E00E98923 /* Enpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55101922A74C7E00E98923 /* Enpoints.swift */; };
-		EDB785F322A9AF9400464F9A /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB785F222A9AF9400464F9A /* Books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +33,12 @@
 		ED550FF322A7445B00E98923 /* LibGenAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibGenAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED550FF822A7445B00E98923 /* LibGenAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibGenAPITests.swift; sourceTree = "<group>"; };
 		ED550FFA22A7445B00E98923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED55100F22A7449F00E98923 /* LibGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibGen.swift; sourceTree = "<group>"; };
+		ED55100F22A7449F00E98923 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		ED55101122A7459400E98923 /* InteractionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionAPI.swift; sourceTree = "<group>"; };
 		ED55101322A7471600E98923 /* LibGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibGenTests.swift; sourceTree = "<group>"; };
 		ED55101522A7474000E98923 /* LibGen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LibGen.json; sourceTree = "<group>"; };
 		ED55101722A7493E00E98923 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		ED55101922A74C7E00E98923 /* Enpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enpoints.swift; sourceTree = "<group>"; };
-		EDB785F222A9AF9400464F9A /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +104,7 @@
 		EDB785F122A9AF8700464F9A /* Books */ = {
 			isa = PBXGroup;
 			children = (
-				ED55100F22A7449F00E98923 /* LibGen.swift */,
-				EDB785F222A9AF9400464F9A /* Books.swift */,
+				ED55100F22A7449F00E98923 /* Book.swift */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -221,10 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB785F322A9AF9400464F9A /* Books.swift in Sources */,
 				ED55101822A7493E00E98923 /* Tools.swift in Sources */,
 				ED55101A22A74C7E00E98923 /* Enpoints.swift in Sources */,
-				ED55101022A7449F00E98923 /* LibGen.swift in Sources */,
+				ED55101022A7449F00E98923 /* Book.swift in Sources */,
 				ED55101222A7459400E98923 /* InteractionAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

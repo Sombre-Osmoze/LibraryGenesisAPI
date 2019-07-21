@@ -29,7 +29,7 @@ class LibGenTests: XCTestCase {
 			return
 		}
 
-		XCTAssertNoThrow(try JSONDecoder().decode(LibGen.self, from: data))
+		XCTAssertNoThrow(try JSONDecoder().decode(Book.self, from: data))
 	}
 
 }
